@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1250\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red237\green249\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c94118\c98039\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Plocha je \'9atvorcov\'e1 sie\uc0\u357  obsahuj\'facu n x m pol\'ed\u269 ok. Ka\'9ed\'e9mu pol\'ed\u269 ku prisl\'facha prirodzene dvojica (x,y), kde 0<=x<n a 0<=y<m. Pol\'ed\u269 ka s\'fa dvoch typov: zak\'e1zan\'e9 a povolen\'e9. Po pol\'ed\u269 kach sa pohybuje pan\'e1\u269 ik. Pre jeho pohyb platia nasleduj\'face pravidl\'e1. Ak sa zmenilo pol\'ed\u269 ko pan\'e1\u269 ika v minulom \u357 ahu o 
+\f1\fs26 (dx1, dy1)
+\f0\fs32 , v nasleduj\'facom \uc0\u357 ahu sa m\'f4\'9ee zmeni\u357  o jednu z nasleduj\'facich hodn\'f4t 
+\f1\fs26 (dx2,dy2)
+\f0\fs32 : 
+\f1\fs26 (dx1-1,dy1-1)
+\f0\fs32 , 
+\f1\fs26 (dx1-1,dy1+0)
+\f0\fs32 , 
+\f1\fs26 (dx1-1,dy1+1)
+\f0\fs32  
+\f1\fs26 (dx1+0,dy1-1)
+\f0\fs32 , 
+\f1\fs26 (dx1+0,dy1+0)
+\f0\fs32 , 
+\f1\fs26 (dx1+0,dy1+1)
+\f0\fs32  
+\f1\fs26 (dx1+1,dy1-1)
+\f0\fs32 , 
+\f1\fs26 (dx1+1,dy1+0)
+\f0\fs32 , 
+\f1\fs26 (dx1+1,dy1+1)
+\f0\fs32 , pri\uc0\u269 om ale 
+\f1\fs26 dx2^2+dy2^2<=25
+\f0\fs32 . Pan\'e1\uc0\u269 ik nem\'f4\'9ee vyjs\u357  mimo plochy ani sa dosta\u357  na zak\'e1zan\'e9 pol\'ed\u269 ko.\cb1 \
+\cb3 Pan\'e1\uc0\u269 ik za\u269 \'edna v stave ako keby jeho sa v minulom \u357 ahu zmenilo pol\'ed\u269 ko pan\'e1\u269 ika o 
+\f1\fs26 (0,0)
+\f0\fs32  a cie\uc0\u318 om je n\'e1js\u357  najkrat\'9aiu cestu zo \'9atartov\'e9ho pol\'ed\u269 ka na cie\u318 ov\'e9 pol\'ed\u269 ko. V pr\'edpade, \'9ee tak\'fdchto ciest bude viac, vyberte tak\'fa kde je 
+\f1\fs26 n
+\f0\fs32 -tica 
+\f1\fs26 (x0, y0, x1, y1, x2, y2, ..., xn, yn)
+\f0\fs32  lexikograficky najmen\'9aia, pri\uc0\u269 om 
+\f1\fs26 xi
+\f0\fs32  a 
+\f1\fs26 yi
+\f0\fs32  s\'fa 
+\f1\fs26 x
+\f0\fs32 -ov\'e1 (riadok) a 
+\f1\fs26 y
+\f0\fs32 -ov\'e1 (stlpec) s\'faradnica polohy pan\'e1\uc0\u269 ika po 
+\f1\fs26 i
+\f0\fs32 -tom \uc0\u357 ahu.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\b \cf2 \cb3 Form\'e1t vstupu:
+\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 V prvom riadku vstupu sa nach\'e1dza po\uc0\u269 et podvstupov, za n\'edm nasleduje pr\'e1zdny riadok.\cb1 \
+\cb3 N\'e1sledne pre ka\'9ed\'fd podvstup nasleduje:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+riadok s dvoma cel\'fdmi \uc0\u269 \'edslami 
+\f1\fs26 x
+\f0\fs32  a 
+\f1\fs26 y
+\f0\fs32  ud\'e1vaj\'facimi rozmery plochy 
+\f1\fs26 x
+\f0\fs32 =po\uc0\u269 et riadkov 
+\f1\fs26 y
+\f0\fs32 =po\uc0\u269 et st\u314 pcov, 
+\f1\fs26 x<=150
+\f0\fs32 , 
+\f1\fs26 y<=150
+\f0\fs32 ,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+riadok s dvoma cel\'fdmi \uc0\u269 \'edslami 
+\f1\fs26 xz
+\f0\fs32  a 
+\f1\fs26 yz
+\f0\fs32  ud\'e1vaj\'facimi po\uc0\u269 iato\u269 n\'e9 pol\'ed\u269 ko pan\'e1\u269 ika, 
+\f1\fs26 0<=xz<x
+\f0\fs32 , 
+\f1\fs26 0<=yz<y
+\f0\fs32 ,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+riadok s dvoma cel\'fdmi \uc0\u269 \'edslami 
+\f1\fs26 xk
+\f0\fs32  a 
+\f1\fs26 yk
+\f0\fs32  ud\'e1vaj\'facimi koncov\'e9 pol\'ed\uc0\u269 ko pan\'e1\u269 ika, 
+\f1\fs26 0<=xk<x
+\f0\fs32 , 
+\f1\fs26 0<=yk<y
+\f0\fs32 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Nasleduje 
+\f1\fs26 x
+\f0\fs32  riadkov, pri\uc0\u269 om ka\'9ed\'fd riadok obsahuje 
+\f1\fs26 y
+\f0\fs32  znakov. Ak je v 
+\f1\fs26 a
+\f0\fs32 -tom riadku a 
+\f1\fs26 b
+\f0\fs32 -tom st\uc0\u314 pci tejto \u269 asti na vstupe znak 
+\f1\fs26 'X'
+\f0\fs32 , znamen\'e1 to, \'9ee pol\'ed\uc0\u269 ko 
+\f1\fs26 (a,b)
+\f0\fs32  je zak\'e1zan\'e9. V opa\uc0\u269 nom pr\'edpade je v 
+\f1\fs26 a
+\f0\fs32 -tom riadku a 
+\f1\fs26 b
+\f0\fs32 -tom st\uc0\u314 pci tejto \u269 asti na vstupe znak 
+\f1\fs26 '.'
+\f0\fs32 , \uc0\u269 o znamen\'e1, \'9ee pol\'ed\u269 ko je povolen\'e9. Na z\'e1ver podvstupu nasleduje pr\'e1zdny riadok.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\b \cf2 \cb3 Form\'e1t v\'fdstupu:
+\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 V\'fdstup bude postupne obsahova\uc0\u357  rie\'9aenia pre jednotliv\'e9 podvstupy, za ka\'9ed\'fdm bude riadok obsahuj\'faci 
+\f1\fs26 --------------------
+\f0\fs32 \cb1 \
+\cb3 Ak podvstup nem\'e1 rie\'9aenie, vyp\'ed\'9ae sa 
+\f1\fs26 No solution
+\f0\fs32 \cb1 \
+\cb3 Ak podvstup m\'e1 rie\'9aenie, vyp\'ed\'9ae sa 
+\f1\fs26 x
+\f0\fs32  riadkov po 
+\f1\fs26 y
+\f0\fs32  znakov, kde v 
+\f1\fs26 a
+\f0\fs32 -tom riadku a 
+\f1\fs26 b
+\f0\fs32 -tom st\uc0\u314 pci je:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+znak medzera (
+\f1\fs26 ' '
+\f0\fs32 ) ak je pol\'ed\uc0\u269 ko (a,b) povolen\'e9 a pan\'e1\u269 ik na \u328 om nebol,\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+znak o (
+\f1\fs26 'o'
+\f0\fs32 ) ak je pol\'ed\uc0\u269 ko (a,b) povolen\'e9 a pan\'e1\u269 ik na \u328 om bol,\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+znak X (
+\f1\fs26 'X'
+\f0\fs32 ) ak je pol\'ed\uc0\u269 ko (a,b) zak\'e1zan\'e9.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Pam\'e4\uc0\u357 ov\'fd limit: cca 128 MB\cb1 \
+\cb3 Pozn\'e1mka: Uvedomte si, \'9ee na ulo\'9eenie polohy a predch\'e1dzaj\'faceho pohybu pan\'e1\uc0\u269 ika v\'e1m sta\u269 \'ed 32 bitov (long).}
